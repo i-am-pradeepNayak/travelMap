@@ -23,7 +23,8 @@ function App() {
         const data = await resp.json();
         setCities(data);
       } catch (e) {
-        console.log(e);
+        // console.log(e);
+        throw new Error("Data fetching Error");
       } finally {
         setIsLoading(false);
       }
@@ -38,24 +39,17 @@ function App() {
         <Route path="pricing" element={<Pricing />} />
         <Route path="login" element={<Login />} />
         <Route path="app" element={<AppLayout />}>
-          <Route
-            index
-            element={<Navigate to="cities" replace/>}
-          />
+          <Route index element={<Navigate to="cities" replace />} />
           <Route
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
-          <Route
-            index
-            path="cities/:id"
-            element={<City />}
-          />
+          <Route index path="cities/:id" element={<City />} />
           <Route
             path="countries"
             element={<CountryList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="form" element={<Form/>} />
+          <Route path="form" element={<Form />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
