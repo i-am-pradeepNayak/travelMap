@@ -2,8 +2,12 @@ import Message from "./Message";
 import Spinner from "./Spinner";
 import styles from "./CountryList.module.css";
 import CountryItem from "./CountryItem";
+import { Link } from "react-router-dom";
+import { useCity } from "../contexts/CityContext";
 
-function CountryList({ cities, isLoading }) {
+function CountryList() {
+  const { cities, isLoading } = useCity();
+
   const countries = cities.filter(
     (obj, index, self) =>
       index === self.findIndex((el) => el["country"] === obj["country"])
@@ -16,6 +20,9 @@ function CountryList({ cities, isLoading }) {
       {countries.map((country, idx) => (
         <CountryItem country={country} key={idx} />
       ))}
+      <Link to=".." relative="path">
+        Esc
+      </Link>
     </ul>
   );
 }
