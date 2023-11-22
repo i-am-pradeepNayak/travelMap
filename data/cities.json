@@ -71,18 +71,6 @@
         "lng": "83.9794921875"
       },
       "id": 6
-    },
-    {
-      "cityName": "Grimsnes- og Grafningshreppur",
-      "country": "Iceland",
-      "emoji": "🇮🇸",
-      "date": "2023-11-22T03:29:06.743Z",
-      "notes": "cold",
-      "position": {
-        "lat": "64.13936944203154",
-        "lng": "-21.390380859375004"
-      },
-      "id": 7
     }
   ]
 }
