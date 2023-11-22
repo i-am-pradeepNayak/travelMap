@@ -1,15 +1,25 @@
 import { useState } from "react";
 import styles from "./Login.module.css";
 import PageNav from "../components/PageNav";
+import { useAuth } from "../contexts/FakeContext";
 
 export default function Login() {
-  // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
   const [password, setPassword] = useState("qwerty");
+  const { login } = useAuth();
+
+  const handleLogin = (e, { email, password }) => {
+    try {
+      e.preventDefault();
+      login(email, password);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   return (
     <main className={styles.login}>
-      <PageNav/>
+      <PageNav />
       <form className={styles.form}>
         <div className={styles.row}>
           <label htmlFor="email">Email address</label>
@@ -32,7 +42,9 @@ export default function Login() {
         </div>
 
         <div>
-          <button>Login</button>
+          <button onClick={(e) => handleLogin(e, { email, password })}>
+            Login
+          </button>
         </div>
       </form>
     </main>

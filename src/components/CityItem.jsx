@@ -11,7 +11,7 @@ function CityItem({ city }) {
     position: { lat, lng },
   } = city;
 
-  const { currentCity } = useCity();
+  const { currentCity, removeCity } = useCity();
 
   const flagemojiToPNG = (flag) => {
     var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt())
@@ -29,6 +29,11 @@ function CityItem({ city }) {
       year: "numeric",
     }).format(new Date(date));
 
+  const handleRemoveCity = async (e, id) => {
+    e.preventDefault();
+    await removeCity(id);
+  };
+
   return (
     <li>
       <Link
@@ -40,7 +45,12 @@ function CityItem({ city }) {
         <span className={styles.emoji}>{flagemojiToPNG(emoji)}</span>
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}>{formatDate(date)}</time>
-        <button className={styles.deleteBtn}>&times;</button>
+        <button
+          className={styles.deleteBtn}
+          onClick={(e) => handleRemoveCity(e, id)}
+        >
+          &times;
+        </button>
       </Link>
     </li>
   );

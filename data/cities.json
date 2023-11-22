@@ -1,40 +1,88 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "cityName": "Karkala",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2023-11-21T14:03:32.161Z",
+      "notes": "😊",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "13.213208268446683",
+        "lng": "75.06683349609376"
       },
-      "id": 73930385
+      "id": 1
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
+      "cityName": "Udupi",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2023-11-21T14:03:45.943Z",
+      "notes": "😎",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "13.346865014577924",
+        "lng": "74.77569580078126"
       },
-      "id": 17806751
+      "id": 2
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Mudgere",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2023-11-21T14:04:10.807Z",
+      "notes": "🥰",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "13.23058780210253",
+        "lng": "75.35934448242189"
       },
-      "id": 98443197
+      "id": 3
+    },
+    {
+      "cityName": "Bibile",
+      "country": "Sri Lanka",
+      "emoji": "🇱🇰",
+      "date": "2023-11-21T14:05:33.863Z",
+      "notes": "candy\n",
+      "position": {
+        "lat": "7.27529233637217",
+        "lng": "81.32080078125001"
+      },
+      "id": 4
+    },
+    {
+      "cityName": "Cape Town",
+      "country": "South Africa",
+      "emoji": "🇿🇦",
+      "date": "2023-11-21T15:22:25.968Z",
+      "notes": "SA",
+      "position": {
+        "lat": "-34.07086232376631",
+        "lng": "18.479003906250004"
+      },
+      "id": 5
+    },
+    {
+      "cityName": "Zhadong",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2023-11-21T15:23:18.732Z",
+      "notes": "Za",
+      "position": {
+        "lat": "29.67850809103362",
+        "lng": "83.9794921875"
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Grimsnes- og Grafningshreppur",
+      "country": "Iceland",
+      "emoji": "🇮🇸",
+      "date": "2023-11-22T03:29:06.743Z",
+      "notes": "cold",
+      "position": {
+        "lat": "64.13936944203154",
+        "lng": "-21.390380859375004"
+      },
+      "id": 7
     }
   ]
 }
